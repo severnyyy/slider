@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slider</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+	<section class="projects" id="projects">
+        <div class="container">
+            <div class="projects-wrapper">
+                <div class="projects-header">
+                    <h2>completed<br> projects</h2>
+                    <p>Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families
+                    </p>
+                </div>
+                <div class="projects-entities">
+                    <div class="city">
+                        <h3>city:</h3>
+                        <span class="projects-info" id="cityTitle">Rostov-on-Don LCD admiral</span>
+                    </div>
+                    <div class="apartment-area">
+                        <h3>apartment area:</h3>
+                        <span class="projects-info" id="apartmentArea">83 m2</span>
+                    </div>
+                    <div class="repair-time">
+                        <h3>repair time:</h3>
+                        <span class="projects-info" id="repairTime">3.5 months</span>
+                    </div>
+                    <div class="repair-cost">
+                        <h3>repair cost:</h3>
+                        <span class="projects-info" id="repairCost">Upon request</span>
+                    </div>
+                    <div class="pagination pagination-outer">
+                        <button class="prev"><img src="img/left.svg"></button>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <button class="next"><img src="img/right.svg"></button>
+                    </div>
+                </div>
+                <div class="slider-wrapper">
+                    <ul class="slide-titles">
+                        <li class="slide-title"><a href="#projects">Rostov-on-Don, Admiral</a>
+                            <hr class="underline">
+                        </li>
+                        <li class="slide-title"><a href="#projects">Sochi Thieves</a>
+                            <hr class="underline">
+                        </li>
+                        <li class="slide-title"><a href="#projects">Rostov-on-Don Patriotic</a>
+                            <hr class="underline">
+                        </li>
+                    </ul>
+                    <div id="slider" class="slider">
+                        <div class="slide"><img src="img/slide1.jpg" alt="Rostov-on-Don, Admiral" title="Rostov-on-Don, Admiral"></div>
+                        <div class="slide"><img src="img/slide2.jpg" alt="Sochi Thieves" title="Sochi Thieves"></div>
+                        <div class="slide"><img src="img/slide3.jpg" alt="Rostov-on-Don, Patriotic" title="Rostov-on-Don, Patriotic"></div>
+                    </div>
+                    <div class="pagination pagination-inner">
+                        <button class="prev prev-top"><img src="img/btn-prev.svg"
+                            alt="previous page"></button>
+                        <button class="next next-top"><img src="img/btn-next.svg" alt="next page"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

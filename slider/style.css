@@ -1,0 +1,211 @@
+@font-face {
+  font-family: "Nunito Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+}
+
+@font-face {
+  font-family: "Yeseva One", serif;
+  src: url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-size: 11px;
+  font-family: "Nunito Sans", sans-serif;
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  font-family: "Yeseva One", serif;
+}
+
+h2 {
+  color: #E3B873;
+  font-size: 27px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+hr {
+  width: 55px;
+  margin: auto;
+  border: 1px solid #E3B873;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 92px;
+}
+
+.projects {
+  background-color: #131313;
+}
+
+.projects h2,
+.projects h3 {
+  color: #E3B873;
+}
+
+.projects-wrapper {
+  padding: 26px 42px 90px;
+  display: grid;
+  grid-template-areas: "header slider" "titles slider";
+}
+
+.projects-header {
+  grid-area: header;
+  margin: 68px 50px 55px 0;
+}
+
+.projects-header h2 {
+  margin-bottom: 34px;
+}
+
+.projects-header p {
+  font-size: 14px;
+}
+
+.projects-entities {
+  grid-area: titles;
+  display: grid;
+  justify-content: start;
+  grid-template-columns: auto auto;
+  -moz-column-gap: 67px;
+       column-gap: 67px;
+  row-gap: 45px;
+}
+
+.projects-info {
+  display: block;
+  font-size: 13px;
+  line-height: 21px;
+  margin-top: 9px;
+}
+
+.slider-wrapper {
+  grid-area: slider;
+  width: 680px;
+}
+
+.slide-titles {
+  font-family: "Yeseva One", serif;
+  color: #ffffff;
+  color: rgba(255, 255, 255, 0.3019607843);
+  text-transform: uppercase;
+  font-size: 14px;
+  display: flex;
+  line-height: 19.4px;
+}
+
+.slide-titles li:first-child {
+  color: #E3B873;
+}
+
+.slide-titles li:first-child .underline {
+  border: 1px solid #E3B873;
+}
+
+.slide-title {
+  padding-right: 60.5px;
+}
+
+.underline {
+  width: 100%;
+  border: 1px solid #131313;
+}
+
+.pagination button {
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
+.pagination-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.pagination-outer:nth-child(2) {
+  background-color: white;
+}
+
+.point {
+  height: 9.57px;
+  width: 9.57px;
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  margin: auto 17px;
+  cursor: pointer;
+}
+
+.pagination-inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  top: -50%;
+  margin: auto 14px;
+  display: none;
+}
+
+.slider {
+  width: 679px;
+  height: 482px;
+  margin-top: 45px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide {
+  flex-shrink: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0 5px;
+  transition: transform 1s;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: all 0.3s;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.slide img {
+  height: 100%;
+}
